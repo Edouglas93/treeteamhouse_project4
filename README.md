@@ -1,2 +1,2 @@
-# treeteamhouse_project4
- Web Style Guide
+# teamtreehouse_project4
+ web style guide
