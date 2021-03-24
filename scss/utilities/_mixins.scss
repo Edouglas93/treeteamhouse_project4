@@ -13,7 +13,7 @@
                 background-color: $color;
                 &:hover {
                     background-color: lighten($color, 15%);
-                    transition: background-color .2s ease-in-out .5s; 
+                    transition: background-color .2s ease-in .5s; 
                 }
             }
         }
@@ -30,6 +30,17 @@
         }
     }
 
+/* ============================================= */
+/*           Image position Map-Get Mixin        */
+/* ============================================= */
+
+    @mixin center {
+        display: map-get($img-position, 'display');
+        margin-left: map-get($img-position, 'margin-left');
+        margin-right: map-get($img-position, 'margin-right');
+        margin-top: map-get($img-position, 'margin-top');
+        max-width: map-get($img-position, 'max-width');
+    }
 
 /* ============================================= */
 /*              Media Queries                    */
