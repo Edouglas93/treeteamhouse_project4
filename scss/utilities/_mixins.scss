@@ -24,7 +24,7 @@
 
     @mixin grid($map) {
         @each $col-color, $color in $map {
-            &.#{$col-color} {
+            &.col-#{$col-color} {
                 background-color: $color;
             }
         }
