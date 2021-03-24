@@ -2,8 +2,13 @@
 /*              Mixin Partials                   */
 /* ============================================= */
 
+
+/* ============================================= */
+/*              Buttons Color Map Mixin          */
+/* ============================================= */
+
     @mixin buttons($map) {
-        @each $btn-colors, $color in $map {
+        @each $btn-color, $color in $map {
             &.#{$btn-color} {
                 background-color: $color;
                 &:hover {
@@ -13,6 +18,18 @@
             }
         }
     }
+/* ============================================= */
+/*              Column Color Map Mixin          */
+/* ============================================= */
+
+    @mixin grid($map) {
+        @each $col-color, $color in $map {
+            &.#{$col-color} {
+                background-color: $color;
+            }
+        }
+    }
+
 
 /* ============================================= */
 /*              Media Queries                    */
