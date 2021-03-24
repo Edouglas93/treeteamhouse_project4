@@ -441,35 +441,35 @@ a {
 }
 .btn.default:hover {
   background-color: #9cecfd;
-  transition: background-color 0.2s ease-in 0.5s;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 .btn.error {
   background-color: #e4757a;
 }
 .btn.error:hover {
   background-color: #f1b5b8;
-  transition: background-color 0.2s ease-in 0.5s;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 .btn.info {
   background-color: #927bc1;
 }
 .btn.info:hover {
   background-color: #bdafd9;
-  transition: background-color 0.2s ease-in 0.5s;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 .btn.success {
   background-color: #63cc82;
 }
 .btn.success:hover {
   background-color: #9ddfb0;
-  transition: background-color 0.2s ease-in 0.5s;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 .btn.warning {
   background-color: #fd7856;
 }
 .btn.warning:hover {
   background-color: #feb4a2;
-  transition: background-color 0.2s ease-in 0.5s;
+  transition: background-color 0.2s ease-in 0.2s;
 }
 
 /* ============================================= */

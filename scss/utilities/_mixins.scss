@@ -13,7 +13,7 @@
                 background-color: $color;
                 &:hover {
                     background-color: lighten($color, 15%);
-                    transition: background-color .2s ease-in .5s; 
+                    transition: background-color .2s ease-in .2s; 
                 }
             }
         }
