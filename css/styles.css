@@ -5,19 +5,31 @@
 /*              Colors                           */
 /* ============================================= */
 /* ============================================= */
-/*              Col Colors Map                    */
+/*              Column Color Map                 */
 /* ============================================= */
 /* ============================================= */
-/*              Button Colors Map                 */
+/*              Button Color Map                 */
 /* ============================================= */
 /* ============================================= */
 /*              Fonts                            */
 /* ============================================= */
 /* ============================================= */
+/*              Image Position Map                */
+/* ============================================= */
+/* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
 /* ============================================= */
-/*              Mixin Partial                    */
+/*              Mixin Partials                   */
+/* ============================================= */
+/* ============================================= */
+/*              Buttons Color Map Mixin          */
+/* ============================================= */
+/* ============================================= */
+/*              Column Color Map Mixin          */
+/* ============================================= */
+/* ============================================= */
+/*           Image position Map-Get Mixin        */
 /* ============================================= */
 /* ============================================= */
 /*              Media Queries                    */
@@ -424,25 +436,40 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
-
-.default {
+.btn.default {
   background-color: #51ddfc;
 }
-
-.error {
+.btn.default:hover {
+  background-color: #9cecfd;
+  transition: background-color 0.2s ease-in 0.5s;
+}
+.btn.error {
   background-color: #e4757a;
 }
-
-.info {
+.btn.error:hover {
+  background-color: #f1b5b8;
+  transition: background-color 0.2s ease-in 0.5s;
+}
+.btn.info {
   background-color: #927bc1;
 }
-
-.success {
+.btn.info:hover {
+  background-color: #bdafd9;
+  transition: background-color 0.2s ease-in 0.5s;
+}
+.btn.success {
   background-color: #63cc82;
 }
-
-.warning {
+.btn.success:hover {
+  background-color: #9ddfb0;
+  transition: background-color 0.2s ease-in 0.5s;
+}
+.btn.warning {
   background-color: #fd7856;
+}
+.btn.warning:hover {
+  background-color: #feb4a2;
+  transition: background-color 0.2s ease-in 0.5s;
 }
 
 /* ============================================= */
@@ -479,7 +506,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -488,7 +514,6 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -520,6 +545,8 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  max-width: 100%;
 }
 
 /* ============================================= */
@@ -546,47 +573,36 @@ a {
 .theme.col-1 {
   background-color: #927bc1;
 }
-
 .theme.col-2 {
   background-color: #fd7856;
 }
-
 .theme.col-3 {
   background-color: #deb2ee;
 }
-
 .theme.col-4 {
   background-color: #7ee6fd;
 }
-
 .theme.col-5 {
   background-color: #88d9a0;
 }
-
 .theme.col-6 {
   background-color: #4da2bb;
 }
-
 .theme.col-7 {
   background-color: #ec9fa3;
 }
-
 .theme.col-8 {
   background-color: #fd9f85;
 }
-
 .theme.col-9 {
   background-color: #e4757a;
 }
-
 .theme.col-10 {
   background-color: #63cc82;
 }
-
 .theme.col-11 {
   background-color: #51ddfc;
 }
-
 .theme.col-12 {
   background-color: #80e8d1;
 }
@@ -598,7 +614,7 @@ a {
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (768px) {
+@media (min-width: 768px) {
   .container {
     max-width: 1400px;
     display: block;
